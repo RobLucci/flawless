@@ -1,0 +1,157 @@
+// Parametri base
+// layout a 12 colonne
+@w_wide  	      	   : 990px;
+@m_up 				   : 0px; // margine superiore
+@per_min 			   : 8.333333%; // larghezza colonna minima 
+ 
+ 
+@f_size_master   	   : 1.3em; 
+@f_family_master 	   : Arial, sans-serif;
+@l_height_master 	   : 1.5em;
+@min_height_master 	   : 1.5em;
+ 
+
+html{
+	font-size: 62.5%; // imposta il font-size a 12px di base (da 16) 
+}
+
+
+body{
+	font-family: @f_family_master;
+	font-size: @f_size_master; 
+	line-height: @l_height_master;
+}	
+
+a{
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5{
+	line-height: @l_height_master - 0.5;
+	margin:0;
+	padding:0;
+}
+
+h1{
+	font-size: @f_size_master + 1;
+}
+
+h2{
+	font-size: @f_size_master + 3;
+}
+
+h3{
+	font-size: @f_size_master + 2;
+}
+
+h4{
+	font-size: @f_size_master + 1;
+}
+
+h5{
+	font-size: @f_size_master + 0.2;
+	color:  #ccc;
+}
+
+p{
+	font-size: @f_size_master;
+}
+
+
+.container{
+	width: @w_wide;	 
+	margin: 0 auto;	
+	min-height: @min_height_master;
+	clear:both;
+
+	.row{
+		clear:left;
+		overflow:hidden;		
+	}
+
+	.col_12{
+		float:left;
+		width: @per_min * 12 ;  
+		margin: @m_up 0 0 0 ;
+		clear:both;	
+	}
+
+	.col_11{
+		float:left;
+		width: @per_min * 11 ; 
+		margin: @m_up 0 0 0 ;	
+	}
+
+
+	.col_10{
+		float:left;
+		width: @per_min * 10 ;  
+		margin: @m_up 0 0 0 ;
+	
+	}
+
+	.col_9{
+		float:left;
+		width: @per_min * 9 ;  
+		margin: @m_up 0 0 0 ;
+	
+	}
+
+	.col_8{
+		float:left;
+		width: @per_min * 8 ; ; 
+		margin: @m_up 0 0 0 ;
+
+	}
+
+	.col_7{
+		float:left;
+		width: @per_min * 7 ;  
+		margin: @m_up 0 0 0 ;
+	
+	}
+
+	.col_6{
+		float:left;
+		width: @per_min * 6 ;  
+		margin: @m_up 0 0 0 ;
+	
+	}
+
+	.col_5{
+		float:left;
+		width: @per_min * 5 ;  
+		margin: @m_up 0 0 0 ;
+	
+	}	
+
+	.col_4{
+		float:left;
+		width: @per_min * 4 ;  
+		margin: @m_up 0 0 0 ;
+
+	}		
+
+	.col_3{
+		float:left;
+		width: (@per_min * 3) ; 
+		margin: @m_up 0 0 0 ;
+	
+	}		 
+
+	.col_2{
+		float:left;
+		width: @per_min * 2 ;  
+		margin: @m_up 0 0 0 ;
+		
+	}	
+
+	.col_1{
+		float:left;
+		width: @per_min * 1 ;  
+		margin: @m_up 0 0 0 ;
+		
+	}		 
+
+ 
+}
